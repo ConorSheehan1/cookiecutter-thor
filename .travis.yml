@@ -17,4 +17,3 @@ before_script:
   - ./script/install.sh
 script:
   - bundle exec rspec
-  - bundle exec rubocop
