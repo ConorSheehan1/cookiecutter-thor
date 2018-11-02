@@ -3,7 +3,7 @@
 require '{{ cookiecutter.repo_name }}'
 
 # only run coverage report outside continuous integration
-if !ENV['CI']
+unless ENV['CI']
   require 'simplecov'
   SimpleCov.start do
     add_group 'Library', 'lib/'

@@ -8,6 +8,10 @@ describe {{ cookiecutter.gem_module }}::Cli::Sub do
         expect(STDOUT).to receive(:puts).with("hello #{@name}")
         subject.class.start(['hello'])
       end
+      it 'displays all caps when the --shout flag is used' do
+        expect(STDOUT).to receive(:puts).with("hello #{@name}".upcase)
+        subject.class.start(['hello', '--shout'])
+      end
     end
     context 'name is provided' do
       before { @name = 'some_real_name' }

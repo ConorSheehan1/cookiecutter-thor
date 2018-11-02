@@ -7,9 +7,15 @@ module {{ cookiecutter.gem_module }}
     # Example sub command class
     class Sub < Thor
       desc 'hello NAME(default=you)', 'says hello'
+      method_option :shout, type: :boolean, default: false
       # @param name [String]
       def hello(name = 'you')
-        puts("hello #{name}")
+        message = "hello #{name}"
+        if options['shout']
+          puts(message.upcase)
+        else
+          puts(message)
+        end
       end
     end
   end
