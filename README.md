@@ -1,13 +1,11 @@
-# cookiecutter-rubygem
-
-This repo contains a cookiecutter template for creating a new Ruby command line gem using thor.
+This repo contains a [cookiecutter](https://github.com/audreyr/cookiecutter) template for creating a new Ruby command line gem using [thor](https://github.com/erikhuda/thor).
 
 # Installation
 
 ```
-mkdir ~/.cookiecutters/
-git clone $this_repo ~/.cookiecutters/
 pip install --user cookiecutter
+mkdir ~/.cookiecutters/
+git clone https://github.com/ConorSheehan1/cookiecutter-thor-rubygem ~/.cookiecutters/
 cookiecutter cookiecutter-ruby-thor-cli
 ```
 
