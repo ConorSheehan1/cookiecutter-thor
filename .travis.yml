@@ -1,6 +1,7 @@
 os: linux
 dist: trusty
 language: ruby
+sudo: false
 cache: bundler
 rvm:
   - '2.3.0'
