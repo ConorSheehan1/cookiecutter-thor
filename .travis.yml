@@ -4,9 +4,11 @@ language: ruby
 sudo: false
 cache: bundler
 rvm:
-  - '2.3.0'
+  - 2.3.0
 python:
-  - '3.6'
+  - 3.6
+env:
+  - CI=true
 install:
   - pip install --user -r requirements.txt
 before_script:
@@ -14,4 +16,5 @@ before_script:
   - cd example_gem
   - ./script/install.sh
 script:
-  bundle exec rspec
+  - bundle exec rspec
+  # - bundle exec rubocop
