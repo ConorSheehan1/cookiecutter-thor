@@ -1,0 +1,5 @@
+# specs should never run in production, so not really a risk.
+# capture method in stdout_helpers which uses eval is in source code for thor itself too.
+Security/Eval:
+  Exclude: 
+    - spec/support/stdout_helpers.rb

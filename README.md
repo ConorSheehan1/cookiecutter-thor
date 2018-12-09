@@ -1,8 +1,6 @@
 [![Build Status](https://travis-ci.org/ConorSheehan1/cookiecutter-thor-rubygem.svg?branch=master)](https://travis-ci.org/ConorSheehan1/cookiecutter-thor-rubygem)
 
-Originally forked from https://github.com/tjwp/cookiecutter-rubygem
-
-This repo contains a [cookiecutter](https://github.com/audreyr/cookiecutter) template for creating a new Ruby command line gem using [thor](https://github.com/erikhuda/thor).
+This repo contains a [cookiecutter](https://github.com/audreyr/cookiecutter) template for creating a new ruby command line gem using [thor](https://github.com/erikhuda/thor).
 
 # Requirements
 
@@ -26,3 +24,20 @@ cd $dir_generated_by_cookiecutter
 ./script/install.sh
 bundle exec rspec
 ```
+
+# Testing
+
+```
+# unit tests
+bundle exec rspec
+
+# linter
+bundle exec rubocop
+
+# Generate documentation
+bundle exec yard
+```
+
+# Credit
+
+Originally forked from https://github.com/tjwp/cookiecutter-rubygem
