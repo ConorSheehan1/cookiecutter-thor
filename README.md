@@ -8,7 +8,11 @@ This repo contains a [cookiecutter](https://github.com/audreyr/cookiecutter) tem
 * ruby         (tested with 2.3.0)
 * cookiecutter (tested with 1.6.0)
 
+for more details see [.travis.yml](.travis.yml)
+
 # Usage
+
+For full cookiecutter instructions see https://github.com/audreyr/cookiecutter#features
 
 To create a new project using this cookiecutter template:
 
@@ -18,11 +22,13 @@ cookiecutter gh:ConorSheehan1/cookiecutter-thor-rubygem
 ```
 
 The template comes with an installation script which will build and install the generated gem.
+For example:
 
 ```
-cd $dir_generated_by_cookiecutter
+cookiecutter gh:ConorSheehan1/cookiecutter-thor-rubygem --no-input
+cd example_gem
 ./script/install.sh
-bundle exec rspec
+example_gem # command line executable should now be available
 ```
 
 # Testing
