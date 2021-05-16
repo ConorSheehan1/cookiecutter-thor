@@ -19,10 +19,10 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: [2.5.x, 2.6.x, 2.7.x]
+        ruby: ['2.5.x', '2.6.x', '2.7.x']
         python: [3.6]
 
     env:
