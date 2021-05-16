@@ -2,7 +2,7 @@
 
 require '{{ cookiecutter.repo_name }}'
 # require all helpers
-Dir[File.join(__dir__, 'support', '**', '*.rb')].each do |file|
+Dir[File.join(__dir__, 'support', '**', '*.rb')].sort.each do |file|
   require file
 end
 

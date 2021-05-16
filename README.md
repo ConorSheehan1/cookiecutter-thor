@@ -1,14 +1,13 @@
-[![Build Status](https://travis-ci.org/ConorSheehan1/cookiecutter-thor-rubygem.svg?branch=master)](https://travis-ci.org/ConorSheehan1/cookiecutter-thor-rubygem)
+[![Build Status](https://github.com/ConorSheehan1/cookiecutter-thor-rubygem/workflows/ci/badge.svg)](https://github.com/ConorSheehan1/cookiecutter-thor-rubygem/actions/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repo contains a [cookiecutter](https://github.com/audreyr/cookiecutter) template for creating a new ruby command line gem using [thor](https://github.com/erikhuda/thor).
 
 # Requirements
 
-* python       (tested with 3.6)
-* ruby         (tested with 2.3.0)
+* python       [![Tested python versions](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/ConorSheehan1/cookiecutter-thor-rubygem/master/.github/workflows/ci.yml&label=Tested%20python%20versions&query=$.jobs.build.strategy.matrix.python)](https://github.com/ConorSheehan1/cookiecutter-thor-rubygem/blob/master/.github/workflows/ci.yml#L26)
+* ruby         [![Tested ruby versions](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/ConorSheehan1/cookiecutter-thor-rubygem/master/.github/workflows/ci.yml&label=Tested%20ruby%20versions&query=$.jobs.build.strategy.matrix.ruby)](https://github.com/ConorSheehan1/cookiecutter-thor-rubygem/blob/master/.github/workflows/ci.yml#L25)
 * cookiecutter (tested with 1.6.0)
-
-for more details see [.travis.yml](.travis.yml)
 
 # Usage
 
