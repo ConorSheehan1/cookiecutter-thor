@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require 'thor'
+require '{{ cookiecutter.repo_name }}/cli/base'
 require '{{ cookiecutter.repo_name }}/cli/sub'
 
 module {{ cookiecutter.gem_module }}
   module Cli
     # Example thor cli entrypoint class
-    class Main < Thor
+    class Main < Base
       # example of calling a class using a subcommand
-      desc 'test SUBCOMMAND ...ARGS', 'example subcommand'
+      desc 'sub SUBCOMMAND ...ARGS', 'example subcommand'
       subcommand 'sub', {{ cookiecutter.gem_module }}::Cli::Sub
 
       desc 'version', 'show the current version of the gem'
@@ -23,6 +23,8 @@ module {{ cookiecutter.gem_module }}
       map '--version' => 'version'
       map '--help'    => 'help'
       map '-h'        => 'help'
+
+      with_friendly_errors([:version])
     end
   end
 end
