@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: ['2.5.x', '2.6.x', '2.7.x']
+        ruby: [2.5.7, 2.6.7, 2.7.3]
         python: [3.6]
 
     env:
